@@ -1,0 +1,269 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+@font-face {
+font-family: 'Athletics';
+src: url('assets/fonts/Athletics/Athletics-Regular.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'AthleticsBold';
+  src: url('assets/fonts/Athletics/Athletics-Bold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('assets/fonts/Tiempos/TiemposText-Regular.woff') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Soehne';
+  src: url('assets/fonts/Soehne/soehne-buch.woff2') format('woff2'),
+}
+  
+
+
+html,
+body {
+  overflow-x: hidden;  /*Prevent scroll on narrow devices */
+  text-align: left;
+  font-family: 'Athletics', 'Arial', sans-serif;
+  /* font-family: 'Athletics', 'Asap', 'Arial', sans-serif; */
+}
+
+footer {
+  background-color: #f6f6f6;
+  padding: 6rem 0rem 0.5rem 0rem;
+}
+
+.authors {
+  font-size: 1.4em;
+  text-align: left;
+  font-family: 'Athletics', 'Arial', sans-serif;
+}
+
+.container-text {
+  width: 70% !important;
+  max-width: 768px;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+pre {
+  background-color: #e8e8e8;
+  font-size: 15px !important;
+}
+
+.rounded{
+  border-radius: 1.1rem !important; 
+}
+
+/* .container {
+  max-width: 1150px;
+} */
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Athletics', 'Arial', sans-serif;
+  text-align: left;
+  /*padding-bottom: 20px;*/
+}
+
+.bold {
+  font-family: 'AthleticsBold', 'Arial', sans-serif !important;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.tiny {
+  font-size: 15px;
+}
+
+
+li {
+  font-size: 16px;
+}
+
+h2 {
+    text-align: left;
+}
+
+.btn {
+    font-size: 18px;
+}
+
+a:link { 
+  color: #00B8D4;
+  text-decoration: none; 
+} 
+a:visited {
+  color: #00B8D4;
+  text-decoration: none; 
+} 
+a:hover {
+  color: #353535;
+  text-decoration: none; 
+} 
+a:active { 
+  color: #00B8D4;
+  text-decoration: none; 
+}
+
+input[type=submit], input[type=reset], input[type=button], button, .button {
+  background-color: #ddcecd;
+  border-radius: 10px;
+  padding: 0.75em 1em;
+  color: #353535 !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: 700;
+  font-family: "AthleticsMedium", sans-serif;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  &:hover {
+      /* background-color: #c2c2c2; */
+      background-color: #00B8D4;
+      opacity: 0.5;
+      color: white !important;
+  }
+
+  &:active {
+      opacity: 0.5;
+      /* background-color: #c2c2c2; */
+      background-color: #00B8D4;
+      color: black;
+  } 
+
+  &.icon {
+      i {
+          font-size: 1.2em;
+          padding-left: 0.5em;
+          padding-bottom: 1px;
+      }
+  }
+
+  &.project {
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 600;
+      height: 0.75em;
+      padding: 0.6em;
+      font-size: 1em;
+      color: black;
+
+      &.white {
+          color: white;
+      }
+  }
+}
+
+.btn-disabled {
+    background-color: #f4f4f4;
+}
+
+.jumbotron{
+  text-align: center;
+  background-color: #ffffff;
+  color:#353535;
+  padding: 6rem 2rem 0rem 2rem;
+  margin-bottom: 0rem;
+}
+
+.jumbotron h2 {
+  text-align: center;
+  font-size: 3.0em;
+}
+
+.jumbotron p {
+  text-align: center;
+  font-family: 'Athletics', 'Arial', sans-serif;
+}
+
+.section {
+  padding-top: 30px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vcontainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gif {
+    padding:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.caption {
+  width:75%; 
+  font-size:14px
+}
+
+.bibtexsection {
+  font-family: "Courier",monospace;
+  font-size:16px;
+  white-space:pre;
+  background-color: #f4f4f4;
+  text-align:left;
+}
+
+.canvas-row canvas {
+  max-width:100%;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.vspace-top {
+    margin-top: 30px;
+}
+
+.blog-cover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3vh 0;
+
+  img.foreground {
+      position: relative;
+      z-index: 2;
+  }
+
+  img.background {
+      position: absolute;
+      z-index: 1;
+      filter: blur(24px);
+  }
+}
